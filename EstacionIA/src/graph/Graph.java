@@ -39,9 +39,9 @@ public class Graph<T> {
         Edge<T> arestaIn = new Edge<T>(inicio, fim, nome);
         Edge<T> arestaFi = new Edge<T>(fim, inicio, nome);
         arestaIn.GerarEstacionamento();
-        arestaFi.setEsquerda(arestaIn.getEsquerda());
-        arestaFi.setDireita(arestaIn.getDireita());
-        
+
+        arestaFi.setEsquerda(arestaIn.getDireita());
+        arestaFi.setDireita(arestaIn.getEsquerda());
         
         inicio.addAjascente(arestaIn);
         fim.addAjascente(arestaFi);
@@ -57,8 +57,9 @@ public class Graph<T> {
         Edge<T> arestaIn = new Edge<T>(inicio, fim, nome, weight);
         Edge<T> arestaFi = new Edge<T>(fim, inicio, nome, weight);
         arestaIn.GerarEstacionamento();
-        arestaFi.setEsquerda(arestaIn.getEsquerda());
-        arestaFi.setDireita(arestaIn.getDireita());
+        
+        arestaFi.setEsquerda(arestaIn.getDireita());
+        arestaFi.setDireita(arestaIn.getEsquerda());
         
         inicio.addAjascente(arestaIn);
         fim.addAjascente(arestaFi);

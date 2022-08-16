@@ -120,36 +120,29 @@ public class Edge<T> {
         txt += " -> Rua: " + this.nome + " - Distancia: " + this.peso + " -> ";
         txt += this.fim.getIndex() + ": " + this.fim.getDesc() + "\n";
         
-        if(this.esquerda.size() < this.direita.size()) {
-            for(Parking vaga: this.direita) {
-                txt += vaga.toString();
-            }
-            txt += "\n";
-            for(int i=0; i<this.direita.size(); i++) {
-                txt += "--";
-            }
-            txt += "\n";
-            for(Parking vaga : this.esquerda) {
-                txt += vaga.toString();
-            }
-        }else {
-            for(Parking vaga: this.esquerda) {
-                txt += vaga.toString();
-            }
-            txt += "\n";
+        for(Parking vaga: this.esquerda) {
+            txt += vaga.toString();
+        }
+        txt += "\n";
+        if(this.esquerda.size() >= this.direita.size()) {
             for(int i=0; i<this.esquerda.size(); i++) {
                 txt += "---";
             }
-            txt += "\n";
-            if(this.direita.isEmpty()) {
-                for(int i=0; i<this.esquerda.size(); i++) {
-                    txt += "[x]";
-                }
+        }
+        if(this.direita.size() > this.esquerda.size()) {
+            for(int i=0; i<this.direita.size(); i++) {
+                txt += "---";
             }
-            else {
-                for(Parking vaga: this.direita) {
-                    txt += vaga.toString();
-                }
+        }
+        txt += "\n";
+        if(!this.direita.isEmpty()) {
+            for(Parking vaga : this.direita) {
+                txt += vaga.toString();
+            }
+        }
+        else {
+            for(int i=0; i<this.esquerda.size(); i++) {
+                txt += "[X]";
             }
         }
         return txt+"\n";

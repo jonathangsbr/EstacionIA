@@ -19,9 +19,9 @@ public class Main {
         alg.put(3, "Roda os dois algoritmos");
         Map mapa = new Map();
         mapa.mapGenerate();
-        int veiculo; //tipo do veiculo
-        int algoritmo; //algoritmo utilizado
-        Vertex<?> localizacao;
+        int veiculo = 1; //tipo do veiculo
+        int algoritmo = 1; //algoritmo utilizado
+        Vertex<?> localizacao = mapa.getListaVert().get(0);
         
         for(int i = 0; i<args.length; i++) {
             if(args[i].equals("-H")) {
@@ -90,7 +90,7 @@ public class Main {
                 }
             }
         }
-        // EstacionIA estacionar = new EstacionIA(veiculo, mapa, localizacao);
-        // estacionar.solucao(algoritmo);
+        EstacionIA estacionar = new EstacionIA(veiculo, mapa, localizacao);
+        estacionar.solucao(algoritmo);
     }
 }

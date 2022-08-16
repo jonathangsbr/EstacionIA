@@ -76,13 +76,11 @@ public class Map {
         this.graph.addAresta("E","F","Nagib Daher", 2);
         this.graph.addAresta("F","G","Nagib Daher", 2);
         this.graph.addAresta("G","H","Nagib Daher", 2);
-        // this.graph.getArestas().forEach(a -> {
-        //     System.out.println(a.toString());
-        // });
-
+        
+        printarArestas();
     }
     
-    public Vertex<String> getVertRandom(){
+    public Vertex<String> getVertRandom() {
         ArrayList<Vertex<String>> list = this.graph.getVertices();
         Random rand = new Random();
         Vertex<String> v = list.get(rand.nextInt(list.size()));
@@ -90,14 +88,20 @@ public class Map {
         return v;
     }
 
-    public void printarVertices(){
+    public void printarVertices() {
         for(int i = 0; i<this.graph.getVertices().size(); i++) {
             int num = i+1;
             System.out.println("'" + num + "' - " + this.graph.getVertices().get(i).getDesc());
         }
     }
 
-    public List<Vertex<String>> getListaVert(){
+    public void printarArestas() {
+        this.graph.getArestas().forEach(a -> {
+            System.out.println(a.toString());
+        });
+    }
+
+    public List<Vertex<String>> getListaVert() {
         return this.graph.getVertices();
     }
 }

@@ -63,7 +63,7 @@ public class Vertex<T> {
         this.vertAdj = vertAdj;
     }
 
-    public String getDesc(){
+    public String getDesc() {
         return this.desc;
     }
 
