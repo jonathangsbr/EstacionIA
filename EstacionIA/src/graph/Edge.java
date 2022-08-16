@@ -35,15 +35,15 @@ public class Edge<T> {
     public void GerarEstacionamento() {
         int lados = rand.nextInt(10);
         if(lados<8) {
-            this.GerarVagas(this.esquerda);
-            this.GerarVagas(this.direita);
+            this.GerarVagas(this.esquerda,95);
+            this.GerarVagas(this.direita,95);
         }
         else {
-            this.GerarVagas(this.esquerda);
+            this.GerarVagas(this.esquerda,95);
         }
     }
 
-    public void GerarVagas(ArrayList<Parking> lista) {
+    public void GerarVagas(ArrayList<Parking> lista, int percentageOccupied) {
         for(int i=0; i<15+rand.nextInt(16); i++) {
             int tipo = 2;
             boolean ocupado = true;
@@ -51,13 +51,14 @@ public class Edge<T> {
             int chanceVeiculo = rand.nextInt(100);
             int chanceOcupado = rand.nextInt(100);
 
-            if(chanceVeiculo >= 70 && chanceVeiculo < 95) {
+            if(chanceVeiculo > 70 && chanceVeiculo < 95) {
                 tipo = 1; //gera moto
-
-            }else if(chanceVeiculo >= 95) {
+            }
+            else if(chanceVeiculo > 95) {
                 tipo = 3; //gera caminhao
             }
-            if(chanceOcupado >= 95) {
+
+            if(chanceOcupado > percentageOccupied) {
                 ocupado = false;
             }
             lista.add(new Parking(tipo, ocupado)); //tipo 1-3 e ocupado?
@@ -120,8 +121,15 @@ public class Edge<T> {
         txt += " -> Rua: " + this.nome + " - Distancia: " + this.peso + " -> ";
         txt += this.fim.getIndex() + ": " + this.fim.getDesc() + "\n";
         
-        for(Parking vaga: this.esquerda) {
-            txt += vaga.toString();
+        if(!this.esquerda.isEmpty()) {
+            for(Parking vaga : this.esquerda) {
+                txt += vaga.toString();
+            }
+        }
+        else {
+            for(int i=0; i<this.direita.size(); i++) {
+                txt += "[X]";
+            }
         }
         txt += "\n";
         if(this.esquerda.size() >= this.direita.size()) {
@@ -147,5 +155,37 @@ public class Edge<T> {
         }
         return txt+"\n";
     }
+
+    public boolean containVaga() {
+        for (Parking parking : this.esquerda) {
+            if(!parking.isOcupado()) {
+                return true;
+            }
+        }
+        if(!this.direita.isEmpty()) {
+            for (Parking parking : this.direita) {
+                if(!parking.isOcupado()) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public void preencheVaga() {
+        for (Parking parking : this.esquerda) {
+            if(!parking.isOcupado()) {
+                parking.setOcupado(true);
+            }
+        }
+        if(!this.direita.isEmpty()) {
+            for (Parking parking : this.direita) {
+                if(!parking.isOcupado()) {
+                    parking.setOcupado(true);
+                }
+            }
+        }
+    }
+    
 
 }

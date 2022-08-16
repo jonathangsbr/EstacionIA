@@ -1,5 +1,6 @@
 package main;
 
+import algorithms.MetaH;
 import graph.Vertex;
 
 public class EstacionIA {

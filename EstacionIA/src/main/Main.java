@@ -21,7 +21,7 @@ public class Main {
         mapa.mapGenerate();
         int veiculo = 1; //tipo do veiculo
         int algoritmo = 1; //algoritmo utilizado
-        Vertex<?> localizacao = mapa.getListaVert().get(0);
+        Vertex<String> localizacao = mapa.getListaVert().get(0);
         
         for(int i = 0; i<args.length; i++) {
             if(args[i].equals("-H")) {
@@ -90,6 +90,8 @@ public class Main {
                 }
             }
         }
+        System.out.println("LOCALIZAÇÃO: " + localizacao.getDesc());
+        mapa.preenchePerto(localizacao, 2); //ocupar vagas da aresta, n profundidade.
         EstacionIA estacionar = new EstacionIA(veiculo, mapa, localizacao);
         estacionar.solucao(algoritmo);
     }

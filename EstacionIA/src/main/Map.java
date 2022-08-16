@@ -3,7 +3,9 @@ package main;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Stack;
 
+import graph.Edge;
 import graph.Graph;
 import graph.Vertex;
 
@@ -103,5 +105,27 @@ public class Map {
 
     public List<Vertex<String>> getListaVert() {
         return this.graph.getVertices();
+    }
+
+    public void preenchePerto(Vertex<String> local, int qtd) { // <- TESTAR!
+        System.out.println("PREENCHENDO " + qtd + " ARESTAS MAIS PRÓXIMAS");
+
+        Stack<Vertex<String>> listaLocais = new Stack<>();
+        listaLocais.add(local);
+        int profundidade = 0;
+        
+        while(profundidade <= qtd) {
+            Vertex<String> atual = listaLocais.pop();
+            profundidade--;
+            for (Edge<String> aresta : this.graph.getArestas()) {
+                if(aresta.getInicio().equals(atual) && aresta.containVaga()) {
+                    aresta.preencheVaga();
+                }
+                listaLocais.push(aresta.getFim());
+                profundidade++;
+            }
+        }
+        System.out.println("NOVAS ARESTAS: ");
+        printarArestas();
     }
 }

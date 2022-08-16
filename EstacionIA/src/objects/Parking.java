@@ -30,4 +30,8 @@ public class Parking {
         }
         return "["+str+"]";
     }
+
+    public void setOcupado(boolean ocupied) {
+        this.ocupado = ocupied;
+    }
 }
