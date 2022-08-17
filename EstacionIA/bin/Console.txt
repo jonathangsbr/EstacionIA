@@ -1,0 +1,354 @@
+A: Praça Manoel Ribas -> Rua: Avenida Curitiba - Distancia: 10 -> B: Catedral Oeste
+[T][C][C][C][M][C][C][C][C][C][C][M][C][M][C]
+------------------------------------------------------
+[C][C][C][C][C][C][C][T][M][C][C][C][M][C][M][C][C][C]
+
+B: Catedral Oeste -> Rua: Avenida Curitiba - Distancia: 10 -> A: Praça Manoel Ribas
+[C][C][C][C][C][C][C][T][M][C][C][C][M][C][M][C][C][C]
+------------------------------------------------------
+[T][C][C][C][M][C][C][C][C][C][C][M][C][M][C]
+
+A: Praça Manoel Ribas -> Rua: Miguel Simião - Distancia: 10 -> I: Alphaville       
+[M][C][C][C][C][C][C][M][C][T][M][C][C][C][C][M][M][C][M][C][C]
+---------------------------------------------------------------
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+
+I: Alphaville -> Rua: Miguel Simião - Distancia: 10 -> A: Praça Manoel Ribas
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+---------------------------------------------------------------
+[M][C][C][C][C][C][C][M][C][T][M][C][C][C][C][M][M][C][M][C][C]
+
+A: Praça Manoel Ribas -> Rua: Miguel Simião - Distancia: 10 -> E: Climeta
+[C][C][C][C][C][M][C][M][T][M][C][C][C][C][M][C][C][M]
+------------------------------------------------------
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+
+E: Climeta -> Rua: Miguel Simião - Distancia: 10 -> A: Praça Manoel Ribas
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+------------------------------------------------------
+[C][C][C][C][C][M][C][M][T][M][C][C][C][C][M][C][C][M]
+
+B: Catedral Oeste -> Rua: Praça Rui Barbosa - Distancia: 10 -> C: Catedral Lest
+[C][M][C][C][C][C][C][C][C][C][C][C][C][C][C][M][C][C][C][C][C]
+---------------------------------------------------------------
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+
+C: Catedral Lest -> Rua: Praça Rui Barbosa - Distancia: 10 -> B: Catedral Oeste
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+---------------------------------------------------------------
+[C][M][C][C][C][C][C][C][C][C][C][C][C][C][C][M][C][C][C][C][C]
+
+B: Catedral Oeste -> Rua: Osório Ribas - Distancia: 10 -> J: Loja Maçonica
+[M][C][C][C][M][C][M][C][C][C][C][M][M][M][C][C][M][C][C][C][C]
+---------------------------------------------------------------
+[M][M][C][C][M][C][C][C][M][C][C][C][M][M][M][M][+]
+
+J: Loja Maçonica -> Rua: Osório Ribas - Distancia: 10 -> B: Catedral Oeste
+[M][M][C][C][M][C][C][C][M][C][C][C][M][M][M][M][+]
+---------------------------------------------------------------
+[M][C][C][C][M][C][M][C][C][C][C][M][M][M][C][C][M][C][C][C][C]
+
+B: Catedral Oeste -> Rua: Osório Ribas - Distancia: 10 -> F: Hospital da Providência
+[C][C][T][C][C][C][C][M][C][C][C][M][M][C][C][M][C][C][C][C][M][M]
+------------------------------------------------------------------------------
+[C][C][M][C][M][T][C][M][C][C][C][C][M][C][T][C][C][C][M][C][C][C][C][M][C][C]
+
+F: Hospital da Providência -> Rua: Osório Ribas - Distancia: 10 -> B: Catedral Oeste
+[C][C][M][C][M][T][C][M][C][C][C][C][M][C][T][C][C][C][M][C][C][C][C][M][C][C]
+------------------------------------------------------------------------------
+[C][C][T][C][C][C][C][M][C][C][C][M][M][C][C][M][C][C][C][C][M][M]
+
+C: Catedral Lest -> Rua: João Candido Ferreira - Distancia: 10 -> K: Praça 28
+[C][M][M][C][C][C][C][M][C][M][+][C][C][T][M][M][C][C][C]
+---------------------------------------------------------
+[C][C][M][C][C][M][C][M][C][C][C][M][C][C][M][C][C][C][C]
+
+K: Praça 28 -> Rua: João Candido Ferreira - Distancia: 10 -> C: Catedral Lest
+[C][C][M][C][C][M][C][M][C][C][C][M][C][C][M][C][C][C][C]
+---------------------------------------------------------
+[C][M][M][C][C][C][C][M][C][M][+][C][C][T][M][M][C][C][C]
+
+C: Catedral Lest -> Rua: Avenida Curitiba - Distancia: 10 -> D: Hotel Apucarana Palace
+[C][M][C][C][C][M][C][M][C][C][C][C][C][C][C]
+---------------------------------------------------------
+[C][M][M][C][C][C][M][C][C][C][M][C][M][T][M][C][M][C][C]
+
+D: Hotel Apucarana Palace -> Rua: Avenida Curitiba - Distancia: 10 -> C: Catedral Lest
+[C][M][M][C][C][C][M][C][C][C][M][C][M][T][M][C][M][C][C]
+---------------------------------------------------------
+[C][M][C][C][C][M][C][M][C][C][C][C][C][C][C]
+
+C: Catedral Lest -> Rua: João Candido Ferreira - Distancia: 10 -> G: Farmacias
+[C][C][C][C][C][M][C][M][M][C][C][M][M][C][C][C][C]
+------------------------------------------------------------
+[C][C][C][T][C][+][C][C][M][M][C][M][C][C][C][M][M][M][M][C]
+
+G: Farmacias -> Rua: João Candido Ferreira - Distancia: 10 -> C: Catedral Lest
+[C][C][C][T][C][+][C][C][M][M][C][M][C][C][C][M][M][M][M][C]
+------------------------------------------------------------
+[C][C][C][C][C][M][C][M][M][C][C][M][M][C][C][C][C]
+
+D: Hotel Apucarana Palace -> Rua: Clóvis da Fonseca - Distancia: 10 -> L: Clube 28
+[M][C][C][C][C][C][T][C][C][C][T][C][C][C][C][M]
+---------------------------------------------------
+[C][C][M][C][M][C][C][C][C][C][C][C][C][C][C][C][C]
+
+L: Clube 28 -> Rua: Clóvis da Fonseca - Distancia: 10 -> D: Hotel Apucarana Palace
+[C][C][M][C][M][C][C][C][C][C][C][C][C][C][C][C][C]
+---------------------------------------------------
+[M][C][C][C][C][C][T][C][C][C][T][C][C][C][C][M]
+
+D: Hotel Apucarana Palace -> Rua: Clóvis da Fonseca - Distancia: 10 -> H: Odonto Company
+[C][M][M][C][C][C][C][C][C][M][C][M][C][T][M][M]
+---------------------------------------------------
+[C][C][C][C][C][M][M][C][M][C][M][C][C][M][M][C][C]
+
+H: Odonto Company -> Rua: Clóvis da Fonseca - Distancia: 10 -> D: Hotel Apucarana Palace
+[C][C][C][C][C][M][M][C][M][C][M][C][C][M][M][C][C]
+---------------------------------------------------
+[C][M][M][C][C][C][C][C][C][M][C][M][C][T][M][M]
+
+I: Alphaville -> Rua: Clotário Portugal - Distancia: 10 -> J: Loja Maçonica
+[C][C][C][M][C][M][C][C][C][M][C][C][M][C][C][C][C][M]
+---------------------------------------------------------
+[C][C][C][C][C][C][M][C][C][C][M][C][C][M][M][C][C][C][T]
+
+J: Loja Maçonica -> Rua: Clotário Portugal - Distancia: 10 -> I: Alphaville
+[C][C][C][C][C][C][M][C][C][C][M][C][C][M][M][C][C][C][T]
+---------------------------------------------------------
+[C][C][C][M][C][M][C][C][C][M][C][C][M][C][C][C][C][M]
+
+J: Loja Maçonica -> Rua: Clotário Portugal - Distancia: 10 -> K: Praça 28
+[C][M][C][C][C][M][C][M][C][C][C][M][M][C][M][T][C][M][C]
+---------------------------------------------------------
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+
+K: Praça 28 -> Rua: Clotário Portugal - Distancia: 10 -> J: Loja Maçonica
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+---------------------------------------------------------
+[C][M][C][C][C][M][C][M][C][C][C][M][M][C][M][T][C][M][C]
+
+K: Praça 28 -> Rua: Clotário Portugal - Distancia: 10 -> L: Clube 28
+[M][C][M][C][C][T][C][C][M][M][C][C][M][C][M][C][C][C]
+------------------------------------------------------------
+[C][C][C][M][M][C][M][C][C][M][C][C][M][C][C][C][C][T][M][C]
+
+L: Clube 28 -> Rua: Clotário Portugal - Distancia: 10 -> K: Praça 28
+[C][C][C][M][M][C][M][C][C][M][C][C][M][C][C][C][C][T][M][C]
+------------------------------------------------------------
+[M][C][M][C][C][T][C][C][M][M][C][C][M][C][M][C][C][C]
+
+E: Climeta -> Rua: Nagib Daher - Distancia: 10 -> F: Hospital da Providência
+[C][C][C][M][C][C][C][C][C][C][T][C][M][C][C][C][C][C][C][M][C][C]
+------------------------------------------------------------------
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+
+F: Hospital da Providência -> Rua: Nagib Daher - Distancia: 10 -> E: Climeta
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+------------------------------------------------------------------
+[C][C][C][M][C][C][C][C][C][C][T][C][M][C][C][C][C][C][C][M][C][C]
+
+F: Hospital da Providência -> Rua: Nagib Daher - Distancia: 10 -> G: Farmacias
+[C][C][C][M][C][C][M][M][C][C][C][M][C][C][C][C][M][M]
+------------------------------------------------------
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+
+G: Farmacias -> Rua: Nagib Daher - Distancia: 10 -> F: Hospital da Providência
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+------------------------------------------------------
+[C][C][C][M][C][C][M][M][C][C][C][M][C][C][C][C][M][M]
+
+G: Farmacias -> Rua: Nagib Daher - Distancia: 10 -> H: Odonto Company
+[C][C][C][C][C][C][C][C][C][C][C][M][C][T][M]
+---------------------------------------------------
+[C][C][C][C][C][C][M][C][C][C][C][C][C][C][C][C][C]
+
+H: Odonto Company -> Rua: Nagib Daher - Distancia: 10 -> G: Farmacias
+[C][C][C][C][C][C][M][C][C][C][C][C][C][C][C][C][C]
+---------------------------------------------------
+[C][C][C][C][C][C][C][C][C][C][C][M][C][T][M]
+
+Algoritmo selecionado: A Estrela (A*)
+Veículo selecionado: caminhão
+Localização selecionada: Catedral Lest
+--- Algoritmo A* para encontrar uma vaga de estacionamento ---:
+Inicio adicionado na lista fechada!
+Adicionando as arestas adjascentes!
+Praça Rui Barbosa é adjascente de Inicio via vértice B
+João Candido Ferreira é adjascente de Inicio via vértice K
+Avenida Curitiba é adjascente de Inicio via vértice D
+João Candido Ferreira é adjascente de Inicio via vértice G
+
+Criando a Heuristica para os ruas(arestas)
+
+Filho: De C -> Praça Rui Barbosa -> até B
+Distancia de Catedral Oeste até Catedral Lest é 10
+De C -> Praça Rui Barbosa -> até B
+Com G: 10, H: 118 e F:128 adicionado na lista aberta
+
+Filho: De C -> João Candido Ferreira -> até K
+Distancia de Praça 28 até Catedral Lest é 10
+De C -> João Candido Ferreira -> até K
+Com G: 10, H: 188 e F:198 adicionado na lista aberta
+
+Filho: De C -> Avenida Curitiba -> até D
+Distancia de Hotel Apucarana Palace até Catedral Lest é 10
+De C -> Avenida Curitiba -> até D
+Com G: 10, H: 168 e F:178 adicionado na lista aberta
+
+Filho: De C -> João Candido Ferreira -> até G
+Distancia de Farmacias até Catedral Lest é 10
+De C -> João Candido Ferreira -> até G
+Com G: 10, H: 178 e F:188 adicionado na lista aberta
+Praça Rui Barbosa adicionado na lista fechada!
+Adicionando as arestas adjascentes!
+Avenida Curitiba é adjascente de Praça Rui Barbosa via vértice A
+Praça Rui Barbosa é adjascente de Praça Rui Barbosa via vértice C
+Osório Ribas é adjascente de Praça Rui Barbosa via vértice J
+Osório Ribas é adjascente de Praça Rui Barbosa via vértice F
+
+Criando a Heuristica para os ruas(arestas)
+
+Filho: De B -> Avenida Curitiba -> até A
+Distancia de Praça Manoel Ribas até Catedral Oeste é 10
+De B -> Avenida Curitiba -> até A
+Com G: 20, H: 182 e F:202 adicionado na lista aberta
+
+Filho: De B -> Praça Rui Barbosa -> até C
+Praça Rui Barbosa está na lista fechada
+
+Filho: De B -> Osório Ribas -> até J
+Distancia de Loja Maçonica até Catedral Oeste é 10
+De B -> Osório Ribas -> até J
+Com G: 20, H: 168 e F:188 adicionado na lista aberta
+
+Filho: De B -> Osório Ribas -> até F
+Distancia de Hospital da Providência até Catedral Oeste é 10
+De B -> Osório Ribas -> até F
+Com G: 20, H: 252 e F:272 adicionado na lista aberta
+Osório Ribas adicionado na lista fechada!
+Adicionando as arestas adjascentes!
+Osório Ribas é adjascente de Osório Ribas via vértice B
+Clotário Portugal é adjascente de Osório Ribas via vértice I
+Clotário Portugal é adjascente de Osório Ribas via vértice K
+
+Criando a Heuristica para os ruas(arestas)
+
+Filho: De J -> Osório Ribas -> até B
+Osório Ribas está na lista fechada
+
+Filho: De J -> Clotário Portugal -> até I
+Distancia de Alphaville até Loja Maçonica é 10
+De J -> Clotário Portugal -> até I
+Com G: 30, H: 190 e F:220 adicionado na lista aberta
+
+Filho: De J -> Clotário Portugal -> até K
+Distancia de Praça 28 até Loja Maçonica é 10
+De J -> Clotário Portugal -> até K
+Com G: 30, H: 90 e F:120 adicionado na lista aberta
+Clotário Portugal adicionado na lista fechada!
+Adicionando as arestas adjascentes!
+João Candido Ferreira é adjascente de Clotário Portugal via vértice C
+Clotário Portugal é adjascente de Clotário Portugal via vértice J
+Clotário Portugal é adjascente de Clotário Portugal via vértice L
+
+Criando a Heuristica para os ruas(arestas)
+
+Filho: De K -> João Candido Ferreira -> até C
+Distancia de Catedral Lest até Praça 28 é 10
+De K -> João Candido Ferreira -> até C
+Com G: 40, H: 188 e F:228 adicionado na lista aberta
+
+Filho: De K -> Clotário Portugal -> até J
+Clotário Portugal está na lista fechada
+
+Filho: De K -> Clotário Portugal -> até L
+Clotário Portugal está na lista fechada
+João Candido Ferreira adicionado na lista fechada!
+Adicionando as arestas adjascentes!
+Praça Rui Barbosa é adjascente de João Candido Ferreira via vértice B
+João Candido Ferreira é adjascente de João Candido Ferreira via vértice K
+Avenida Curitiba é adjascente de João Candido Ferreira via vértice D
+João Candido Ferreira é adjascente de João Candido Ferreira via vértice G
+
+Criando a Heuristica para os ruas(arestas)
+
+Filho: De C -> Praça Rui Barbosa -> até B
+Praça Rui Barbosa está na lista fechada
+
+Filho: De C -> João Candido Ferreira -> até K
+João Candido Ferreira está na lista fechada
+
+Filho: De C -> Avenida Curitiba -> até D
+Distancia de Hotel Apucarana Palace até Catedral Lest é 10
+De C -> Avenida Curitiba -> até D
+Com G: 50, H: 168 e F:218 adicionado na lista aberta
+
+Filho: De C -> João Candido Ferreira -> até G
+João Candido Ferreira está na lista fechada
+Avenida Curitiba adicionado na lista fechada!
+Adicionando as arestas adjascentes!
+Avenida Curitiba é adjascente de Avenida Curitiba via vértice C
+Clóvis da Fonseca é adjascente de Avenida Curitiba via vértice L
+Clóvis da Fonseca é adjascente de Avenida Curitiba via vértice H
+
+Criando a Heuristica para os ruas(arestas)
+
+Filho: De D -> Avenida Curitiba -> até C
+Avenida Curitiba está na lista fechada
+
+Filho: De D -> Clóvis da Fonseca -> até L
+Distancia de Clube 28 até Hotel Apucarana Palace é 10
+De D -> Clóvis da Fonseca -> até L
+Com G: 60, H: 190 e F:250 adicionado na lista aberta
+
+Filho: De D -> Clóvis da Fonseca -> até H
+Distancia de Odonto Company até Hotel Apucarana Palace é 10
+De D -> Clóvis da Fonseca -> até H
+Com G: 60, H: 154 e F:214 adicionado na lista aberta
+Clóvis da Fonseca adicionado na lista fechada!
+Adicionando as arestas adjascentes!
+Clóvis da Fonseca é adjascente de Clóvis da Fonseca via vértice D
+Nagib Daher é adjascente de Clóvis da Fonseca via vértice G
+
+Criando a Heuristica para os ruas(arestas)
+
+Filho: De H -> Clóvis da Fonseca -> até D
+Clóvis da Fonseca está na lista fechada
+
+Filho: De H -> Nagib Daher -> até G
+Distancia de Farmacias até Odonto Company é 10
+De H -> Nagib Daher -> até G
+Com G: 70, H: 184 e F:254 adicionado na lista aberta
+Nagib Daher adicionado na lista fechada!
+Adicionando as arestas adjascentes!
+João Candido Ferreira é adjascente de Nagib Daher via vértice C
+Nagib Daher é adjascente de Nagib Daher via vértice F
+Nagib Daher é adjascente de Nagib Daher via vértice H
+
+Criando a Heuristica para os ruas(arestas)
+
+Filho: De G -> João Candido Ferreira -> até C
+João Candido Ferreira está na lista fechada
+
+Filho: De G -> Nagib Daher -> até F
+Nagib Daher está na lista fechada
+
+Filho: De G -> Nagib Daher -> até H
+Nagib Daher está na lista fechada
+Osório Ribas adicionado na lista fechada!
+Adicionando as arestas adjascentes!
+Osório Ribas é adjascente de Osório Ribas via vértice B
+Nagib Daher é adjascente de Osório Ribas via vértice E
+Nagib Daher é adjascente de Osório Ribas via vértice G
+
+Criando a Heuristica para os ruas(arestas)
+
+Filho: De F -> Osório Ribas -> até B
+Osório Ribas está na lista fechada
+
+Filho: De F -> Nagib Daher -> até E
+Nagib Daher está na lista fechada
+
+Filho: De F -> Nagib Daher -> até G
+Nagib Daher está na lista fechada

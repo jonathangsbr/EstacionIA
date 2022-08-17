@@ -90,8 +90,6 @@ public class Main {
                 }
             }
         }
-        System.out.println("LOCALIZAÇÃO: " + localizacao.getDesc());
-        mapa.preenchePerto(localizacao, 2); //ocupar vagas da aresta, n profundidade.
         EstacionIA estacionar = new EstacionIA(veiculo, mapa, localizacao);
         estacionar.solucao(algoritmo);
     }

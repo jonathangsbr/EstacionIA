@@ -3,9 +3,7 @@ package main;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Stack;
 
-import graph.Edge;
 import graph.Graph;
 import graph.Vertex;
 
@@ -61,23 +59,23 @@ public class Map {
         this.graph.newVertice("K", "Praça 28");
         this.graph.newVertice("L", "Clube 28");
         
-        this.graph.addAresta("A","B","Avenida Curitiba", 2);
-        this.graph.addAresta("A","I","Miguel Simião", 2);
-        this.graph.addAresta("A","E","Miguel Simião", 2);
-        this.graph.addAresta("B","C","Praça Rui Barbosa", 2);
-        this.graph.addAresta("B","J","Osório Ribas", 2);
-        this.graph.addAresta("B","F","Osório Ribas", 2);
-        this.graph.addAresta("C","K","João Candido Ferreira", 2);
-        this.graph.addAresta("C","D","Avenida Curitiba", 2);
-        this.graph.addAresta("C","G","João Candido Ferreira", 2);
-        this.graph.addAresta("D","L","Clóvis da Fonseca", 2);
-        this.graph.addAresta("D","H","Clóvis da Fonseca", 2);
-        this.graph.addAresta("I","J","Clotário Portugal", 2);
-        this.graph.addAresta("J","K","Clotário Portugal", 2);
-        this.graph.addAresta("K","L","Clotário Portugal", 2);
-        this.graph.addAresta("E","F","Nagib Daher", 2);
-        this.graph.addAresta("F","G","Nagib Daher", 2);
-        this.graph.addAresta("G","H","Nagib Daher", 2);
+        this.graph.addAresta("A","B","Avenida Curitiba", 10);
+        this.graph.addAresta("A","I","Miguel Simião", 10);
+        this.graph.addAresta("A","E","Miguel Simião", 10);
+        this.graph.addAresta("B","C","Praça Rui Barbosa", 10);
+        this.graph.addAresta("B","J","Osório Ribas", 10);
+        this.graph.addAresta("B","F","Osório Ribas", 10);
+        this.graph.addAresta("C","K","João Candido Ferreira", 10);
+        this.graph.addAresta("C","D","Avenida Curitiba", 10);
+        this.graph.addAresta("C","G","João Candido Ferreira", 10);
+        this.graph.addAresta("D","L","Clóvis da Fonseca", 10);
+        this.graph.addAresta("D","H","Clóvis da Fonseca", 10);
+        this.graph.addAresta("I","J","Clotário Portugal", 10);
+        this.graph.addAresta("J","K","Clotário Portugal", 10);
+        this.graph.addAresta("K","L","Clotário Portugal", 10);
+        this.graph.addAresta("E","F","Nagib Daher", 10);
+        this.graph.addAresta("F","G","Nagib Daher", 10);
+        this.graph.addAresta("G","H","Nagib Daher", 10);
         
         printarArestas();
     }
@@ -107,25 +105,7 @@ public class Map {
         return this.graph.getVertices();
     }
 
-    public void preenchePerto(Vertex<String> local, int qtd) { // <- TESTAR!
-        System.out.println("PREENCHENDO " + qtd + " ARESTAS MAIS PRÓXIMAS");
-
-        Stack<Vertex<String>> listaLocais = new Stack<>();
-        listaLocais.add(local);
-        int profundidade = 0;
-        
-        while(profundidade <= qtd) {
-            Vertex<String> atual = listaLocais.pop();
-            profundidade--;
-            for (Edge<String> aresta : this.graph.getArestas()) {
-                if(aresta.getInicio().equals(atual) && aresta.containVaga()) {
-                    aresta.preencheVaga();
-                }
-                listaLocais.push(aresta.getFim());
-                profundidade++;
-            }
-        }
-        System.out.println("NOVAS ARESTAS: ");
-        printarArestas();
+    public Graph<String> getGraph(){
+        return this.graph;
     }
 }

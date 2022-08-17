@@ -7,7 +7,6 @@ public class Parking {
     public Parking(int tipo, boolean ocupado){
         this.tipo = tipo;
         this.ocupado = ocupado;
-
     }
 
     public int getTipo(){
@@ -33,5 +32,14 @@ public class Parking {
 
     public void setOcupado(boolean ocupied) {
         this.ocupado = ocupied;
+    }
+
+    public int getTamanho() {
+        if(this.tipo == 1){
+            return 2;
+        }else if(this.tipo == 2){
+            return 6;
+        }
+        return 10;
     }
 }

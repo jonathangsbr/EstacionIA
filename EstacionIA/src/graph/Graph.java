@@ -95,4 +95,8 @@ public class Graph<T> {
         return vertice;
     }
 
+    public void addArestaIni(Edge<T> arestaInicial) {
+        this.arestas.add(arestaInicial);
+    }
+
 }

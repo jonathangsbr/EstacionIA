@@ -13,6 +13,7 @@ public class Edge<T> {
     private ArrayList<Parking> esquerda;
     private ArrayList<Parking> direita;
     private int peso;
+    private int G,H,F;
 
     public Edge(Vertex<T> start, Vertex<T> end, String rua, int distancia) {
         this.inicio = start;
@@ -32,18 +33,21 @@ public class Edge<T> {
         this.esquerda = new ArrayList<Parking>();
     }
 
+    public Edge() {
+    }
+
     public void GerarEstacionamento() {
         int lados = rand.nextInt(10);
         if(lados<8) {
-            this.GerarVagas(this.esquerda,95);
-            this.GerarVagas(this.direita,95);
+            this.GerarVagas(this.esquerda);
+            this.GerarVagas(this.direita);
         }
         else {
-            this.GerarVagas(this.esquerda,95);
+            this.GerarVagas(this.esquerda);
         }
     }
 
-    public void GerarVagas(ArrayList<Parking> lista, int percentageOccupied) {
+    public void GerarVagas(ArrayList<Parking> lista) {
         for(int i=0; i<15+rand.nextInt(16); i++) {
             int tipo = 2;
             boolean ocupado = true;
@@ -58,11 +62,35 @@ public class Edge<T> {
                 tipo = 3; //gera caminhao
             }
 
-            if(chanceOcupado > percentageOccupied) {
+            if(chanceOcupado > 98) {
                 ocupado = false;
             }
             lista.add(new Parking(tipo, ocupado)); //tipo 1-3 e ocupado?
         }
+    }
+
+    public int getG() {
+        return this.G;
+    }
+
+    public void setG(int Gg) {
+        this.G = Gg;
+    }
+
+    public int getH() {
+        return this.H;
+    }
+
+    public void setH(int Hh) {
+        this.H = Hh;
+    }
+
+    public int getF() {
+        return this.F;
+    }
+
+    public void setF(int Ff) {
+        this.F = Ff;
     }
 
     public String getNome() {
@@ -172,6 +200,23 @@ public class Edge<T> {
         return false;
     }
 
+    public boolean containVaga(int objetivo) {
+        for (Parking parking : this.esquerda) {
+            if(!parking.isOcupado() && parking.getTipo() == objetivo) {
+                return true;
+            }
+        }
+        if(!this.direita.isEmpty()) {
+            for (Parking parking : this.direita) {
+                if(!parking.isOcupado() && parking.getTipo() == objetivo) {
+                    return true;
+                }
+            }
+        }
+		return false;
+	}
+    
+
     public void preencheVaga() {
         for (Parking parking : this.esquerda) {
             if(!parking.isOcupado()) {
@@ -186,6 +231,5 @@ public class Edge<T> {
             }
         }
     }
-    
 
 }
