@@ -1,0 +1,301 @@
+B -> A
+A -> I
+i -> J
+j -> K
+K -> C
+
+A: Praça Manoel Ribas -> Rua: Avenida Curitiba - Distancia: 10 -> B: Catedral Oeste
+[M][M][+][C][C][C][C][C][C][C][C][C][C][C][C][C][C]
+---------------------------------------------------------
+[C][C][M][C][C][C][C][C][C][C][C][M][C][C][C][C][M][C][C]
+
+B: Catedral Oeste -> Rua: Avenida Curitiba - Distancia: 10 -> A: Praça Manoel Ribas
+[C][C][M][C][C][C][C][C][C][C][C][M][C][C][C][C][M][C][C]
+---------------------------------------------------------
+[M][M][+][C][C][C][C][C][C][C][C][C][C][C][C][C][C]
+
+A: Praça Manoel Ribas -> Rua: Miguel Simião - Distancia: 10 -> I: Alphaville       
+[C][M][C][M][M][C][C][C][C][M][C][C][M][T][M][C][C]
+------------------------------------------------------
+[M][C][M][C][M][C][C][M][C][C][T][C][C][M][C][C][M][C]
+
+I: Alphaville -> Rua: Miguel Simião - Distancia: 10 -> A: Praça Manoel Ribas       
+[M][C][M][C][M][C][C][M][C][C][T][C][C][M][C][C][M][C]
+------------------------------------------------------
+[C][M][C][M][M][C][C][C][C][M][C][C][M][T][M][C][C]
+
+A: Praça Manoel Ribas -> Rua: Miguel Simião - Distancia: 10 -> E: Climeta
+[C][M][C][C][C][M][C][C][C][C][M][C][C][C][C][C][C][C][C][C]
+------------------------------------------------------------
+[C][M][C][M][C][C][M][C][C][M][C][C][C][M][C][C][C]
+
+E: Climeta -> Rua: Miguel Simião - Distancia: 10 -> A: Praça Manoel Ribas
+[C][M][C][M][C][C][M][C][C][M][C][C][C][M][C][C][C]
+------------------------------------------------------------
+[C][M][C][C][C][M][C][C][C][C][M][C][C][C][C][C][C][C][C][C]
+
+B: Catedral Oeste -> Rua: Praça Rui Barbosa - Distancia: 10 -> C: Catedral Lest
+[C][M][C][C][C][C][T][C][C][M][M][C][C][C][C][C][C][C][C][C][T][C][C]
+---------------------------------------------------------------------
+[C][C][C][C][M][C][C][C][C][M][T][C][C][C][M][M][M][C]
+
+C: Catedral Lest -> Rua: Praça Rui Barbosa - Distancia: 10 -> B: Catedral Oeste
+[C][C][C][C][M][C][C][C][C][M][T][C][C][C][M][M][M][C]
+---------------------------------------------------------------------
+[C][M][C][C][C][C][T][C][C][M][M][C][C][C][C][C][C][C][C][C][T][C][C]
+
+B: Catedral Oeste -> Rua: Osório Ribas - Distancia: 10 -> J: Loja Maçonica
+[C][C][M][M][C][M][C][C][C][C][M][C][M][M][C][M][C][C][C][C]
+------------------------------------------------------------
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+
+J: Loja Maçonica -> Rua: Osório Ribas - Distancia: 10 -> B: Catedral Oeste
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+------------------------------------------------------------
+[C][C][M][M][C][M][C][C][C][C][M][C][M][M][C][M][C][C][C][C]
+
+B: Catedral Oeste -> Rua: Osório Ribas - Distancia: 10 -> F: Hospital da Providência
+[C][M][C][C][C][C][M][C][*][C][C][M][M][M][C][C][C][C][C][C][C]
+---------------------------------------------------------------
+[C][C][C][C][M][T][C][M][T][C][M][C][C][T][M][C][C]
+
+F: Hospital da Providência -> Rua: Osório Ribas - Distancia: 10 -> B: Catedral Oeste
+[C][C][C][C][M][T][C][M][T][C][M][C][C][T][M][C][C]
+---------------------------------------------------------------
+[C][M][C][C][C][C][M][C][*][C][C][M][M][M][C][C][C][C][C][C][C]
+
+C: Catedral Lest -> Rua: João Candido Ferreira - Distancia: 10 -> K: Praça 28
+[M][M][C][C][C][M][C][C][M][-][M][C][T][M][C][C][M]
+------------------------------------------------------
+[C][C][+][C][C][C][+][M][C][C][C][M][C][M][M][C][T][C]
+
+K: Praça 28 -> Rua: João Candido Ferreira - Distancia: 10 -> C: Catedral Lest
+[C][C][+][C][C][C][+][M][C][C][C][M][C][M][M][C][T][C]
+------------------------------------------------------
+[M][M][C][C][C][M][C][C][M][-][M][C][T][M][C][C][M]
+
+C: Catedral Lest -> Rua: Avenida Curitiba - Distancia: 10 -> D: Hotel Apucarana Palace
+[C][T][C][C][C][C][T][M][C][C][C][C][C][C][M][M][C][C][C][C][M][M]
+------------------------------------------------------------------
+[C][C][C][M][C][C][C][C][C][C][C][C][C][C][+][C][M][C][C][M][C]
+
+D: Hotel Apucarana Palace -> Rua: Avenida Curitiba - Distancia: 10 -> C: Catedral Lest
+[C][C][C][M][C][C][C][C][C][C][C][C][C][C][+][C][M][C][C][M][C]
+------------------------------------------------------------------
+[C][T][C][C][C][C][T][M][C][C][C][C][C][C][M][M][C][C][C][C][M][M]
+
+C: Catedral Lest -> Rua: João Candido Ferreira - Distancia: 10 -> G: Farmacias
+[C][C][C][C][C][C][C][C][C][C][T][C][C][C][C][T][C]
+------------------------------------------------------------------
+[+][C][C][C][M][M][C][C][C][C][M][M][C][C][M][C][C][C][C][+][C][M]
+
+G: Farmacias -> Rua: João Candido Ferreira - Distancia: 10 -> C: Catedral Lest
+[+][C][C][C][M][M][C][C][C][C][M][M][C][C][M][C][C][C][C][+][C][M]
+------------------------------------------------------------------
+[C][C][C][C][C][C][C][C][C][C][T][C][C][C][C][T][C]
+
+D: Hotel Apucarana Palace -> Rua: Clóvis da Fonseca - Distancia: 10 -> L: Clube 28
+[C][M][C][C][C][T][C][C][C][M][M][C][C][C][C][C][C]
+---------------------------------------------------
+[T][M][C][M][T][C][C][M][C][C][C][C][C][M][M][C]
+
+L: Clube 28 -> Rua: Clóvis da Fonseca - Distancia: 10 -> D: Hotel Apucarana Palace
+[T][M][C][M][T][C][C][M][C][C][C][C][C][M][M][C]
+---------------------------------------------------
+[C][M][C][C][C][T][C][C][C][M][M][C][C][C][C][C][C]
+
+D: Hotel Apucarana Palace -> Rua: Clóvis da Fonseca - Distancia: 10 -> H: Odonto Company
+[C][C][C][M][C][M][C][C][M][C][M][C][C][C][C][C][C][C][C][C]
+------------------------------------------------------------
+[C][C][C][M][C][M][M][C][C][M][M][M][C][C][C][C][C][M][C]
+
+H: Odonto Company -> Rua: Clóvis da Fonseca - Distancia: 10 -> D: Hotel Apucarana Palace
+[C][C][C][M][C][M][M][C][C][M][M][M][C][C][C][C][C][M][C]
+------------------------------------------------------------
+[C][C][C][M][C][M][C][C][M][C][M][C][C][C][C][C][C][C][C][C]
+
+I: Alphaville -> Rua: Clotário Portugal - Distancia: 10 -> J: Loja Maçonica
+[C][C][C][C][C][M][C][M][C][C][C][M][C][C][M][C][C][C][M]
+---------------------------------------------------------
+[C][C][C][T][M][C][C][C][C][T][M][C][C][C][C][C][C][M]
+
+J: Loja Maçonica -> Rua: Clotário Portugal - Distancia: 10 -> I: Alphaville
+[C][C][C][T][M][C][C][C][C][T][M][C][C][C][C][C][C][M]
+---------------------------------------------------------
+[C][C][C][C][C][M][C][M][C][C][C][M][C][C][M][C][C][C][M]
+
+J: Loja Maçonica -> Rua: Clotário Portugal - Distancia: 10 -> K: Praça 28
+[C][M][C][C][M][M][C][C][C][C][C][C][C][M][T][C][C][C][C][C]
+---------------------------------------------------------------
+[C][C][C][T][T][C][C][C][C][C][C][T][C][C][M][M][M][C][M][C][C]
+
+K: Praça 28 -> Rua: Clotário Portugal - Distancia: 10 -> J: Loja Maçonica
+[C][C][C][T][T][C][C][C][C][C][C][T][C][C][M][M][M][C][M][C][C]
+---------------------------------------------------------------
+[C][M][C][C][M][M][C][C][C][C][C][C][C][M][T][C][C][C][C][C]
+
+K: Praça 28 -> Rua: Clotário Portugal - Distancia: 10 -> L: Clube 28
+[C][C][M][M][C][C][C][T][C][C][C][C][C][+][M][M][C]
+---------------------------------------------------
+[C][M][C][C][C][C][M][C][C][C][C][C][C][C][C][T][M]
+
+L: Clube 28 -> Rua: Clotário Portugal - Distancia: 10 -> K: Praça 28
+[C][M][C][C][C][C][M][C][C][C][C][C][C][C][C][T][M]
+---------------------------------------------------
+[C][C][M][M][C][C][C][T][C][C][C][C][C][+][M][M][C]
+
+E: Climeta -> Rua: Nagib Daher - Distancia: 10 -> F: Hospital da Providência
+[C][M][C][M][C][C][M][C][C][C][M][C][M][C][M][M][C][C][C][C]
+------------------------------------------------------------
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+
+F: Hospital da Providência -> Rua: Nagib Daher - Distancia: 10 -> E: Climeta
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+------------------------------------------------------------
+[C][M][C][M][C][C][M][C][C][C][M][C][M][C][M][M][C][C][C][C]
+
+F: Hospital da Providência -> Rua: Nagib Daher - Distancia: 10 -> G: Farmacias
+[C][C][C][C][C][T][C][C][C][M][C][C][C][C][C][C][C][C][T][C][C][C][M][C]
+------------------------------------------------------------------------
+[C][C][M][M][C][M][C][M][C][T][M][C][C][M][C][C][C]
+
+G: Farmacias -> Rua: Nagib Daher - Distancia: 10 -> F: Hospital da Providência
+[C][C][M][M][C][M][C][M][C][T][M][C][C][M][C][C][C]
+------------------------------------------------------------------------
+[C][C][C][C][C][T][C][C][C][M][C][C][C][C][C][C][C][C][T][C][C][C][M][C]
+
+G: Farmacias -> Rua: Nagib Daher - Distancia: 10 -> H: Odonto Company
+[C][M][M][T][C][M][M][C][C][C][C][T][C][C][C][C][C]
+---------------------------------------------------
+[M][M][C][C][M][C][C][C][C][C][M][M][C][C][C][C][C]
+
+H: Odonto Company -> Rua: Nagib Daher - Distancia: 10 -> G: Farmacias
+[M][M][C][C][M][C][C][C][C][C][M][M][C][C][C][C][C]
+---------------------------------------------------
+[C][M][M][T][C][M][M][C][C][C][C][T][C][C][C][C][C]
+
+Algoritmo selecionado: Pesquisa Tabu (Tabu Search)
+Veículo selecionado: moto
+Localização selecionada: Loja Maçonica
+--- Algoritmo Busca Tabu para encontrar uma vaga de estacionamento ---:
+
+Adicionando as arestas adjascentes!
+Criando a metaheuristica para as ruas(arestas)
+De J -> Osório Ribas -> até B
+Com H: 92
+De J -> Clotário Portugal -> até I
+Com H: 198
+De J -> Clotário Portugal -> até K
+Com H: 230
+Melhor candidato para ser expandido:
+J: Loja Maçonica -> Rua: Osório Ribas - Distancia: 10 -> B: Catedral Oeste
+[X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X][X]
+------------------------------------------------------------
+[C][C][M][M][C][M][C][C][C][C][M][C][M][M][C][M][C][C][C][C]
+
+De J -> Osório Ribas -> até B
+Com H: 92
+Adicionado na lista tabu
+
+Adicionando as arestas adjascentes!
+Criando a metaheuristica para as ruas(arestas)
+De B -> Avenida Curitiba -> até A
+Com H: 196
+De B -> Praça Rui Barbosa -> até C
+Com H: 226
+De B -> Osório Ribas -> até J
+Com H: 92
+De B -> Osório Ribas -> até F
+Com H: 208
+Melhor candidato para ser expandido:
+B: Catedral Oeste -> Rua: Avenida Curitiba - Distancia: 10 -> A: Praça Manoel Ribas
+[C][C][M][C][C][C][C][C][C][C][C][M][C][C][C][C][M][C][C]
+---------------------------------------------------------
+[M][M][+][C][C][C][C][C][C][C][C][C][C][C][C][C][C]
+
+De B -> Avenida Curitiba -> até A
+Com H: 196
+Adicionado na lista tabu
+
+Adicionando as arestas adjascentes!
+Criando a metaheuristica para as ruas(arestas)
+De A -> Avenida Curitiba -> até B
+Com H: 196
+De A -> Miguel Simião -> até I
+Com H: 170
+De A -> Miguel Simião -> até E
+Com H: 190
+Melhor candidato para ser expandido:
+A: Praça Manoel Ribas -> Rua: Miguel Simião - Distancia: 10 -> I: Alphaville
+[C][M][C][M][M][C][C][C][C][M][C][C][M][T][M][C][C]
+------------------------------------------------------
+[M][C][M][C][M][C][C][M][C][C][T][C][C][M][C][C][M][C]
+
+De A -> Miguel Simião -> até I
+Com H: 170
+Adicionado na lista tabu
+
+Adicionando as arestas adjascentes!
+Criando a metaheuristica para as ruas(arestas)
+De I -> Miguel Simião -> até A
+Com H: 170
+De I -> Clotário Portugal -> até J
+Com H: 198
+Melhor candidato para ser expandido:
+I: Alphaville -> Rua: Clotário Portugal - Distancia: 10 -> J: Loja Maçonica
+[C][C][C][C][C][M][C][M][C][C][C][M][C][C][M][C][C][C][M]
+---------------------------------------------------------
+[C][C][C][T][M][C][C][C][C][T][M][C][C][C][C][C][C][M]
+
+De I -> Clotário Portugal -> até J
+Com H: 198
+Adicionado na lista tabu
+
+Adicionando as arestas adjascentes!
+Criando a metaheuristica para as ruas(arestas)
+De J -> Osório Ribas -> até B
+Com H: 92
+De J -> Clotário Portugal -> até I
+Com H: 198
+De J -> Clotário Portugal -> até K
+Com H: 230
+Melhor candidato para ser expandido:
+J: Loja Maçonica -> Rua: Clotário Portugal - Distancia: 10 -> K: Praça 28
+[C][M][C][C][M][M][C][C][C][C][C][C][C][M][T][C][C][C][C][C]
+---------------------------------------------------------------
+[C][C][C][T][T][C][C][C][C][C][C][T][C][C][M][M][M][C][M][C][C]
+
+De J -> Clotário Portugal -> até K
+Com H: 230
+Adicionado na lista tabu
+LISTA TABU ATINGIU TAMANHO MÁXIMO!
+Removendo da lista: Inicio
+
+Adicionando as arestas adjascentes!
+Criando a metaheuristica para as ruas(arestas)
+De K -> João Candido Ferreira -> até C
+Com H: 88
+De K -> Clotário Portugal -> até J
+Com H: 230
+De K -> Clotário Portugal -> até L
+Com H: 184
+Melhor candidato para ser expandido:
+K: Praça 28 -> Rua: João Candido Ferreira - Distancia: 10 -> C: Catedral Lest
+[C][C][+][C][C][C][+][M][C][C][C][M][C][M][M][C][T][C]
+------------------------------------------------------
+[M][M][C][C][C][M][C][C][M][-][M][C][T][M][C][C][M]
+
+De K -> João Candido Ferreira -> até C
+Com H: 88
+Adicionado na lista tabu
+LISTA TABU ATINGIU TAMANHO MÁXIMO!
+Removendo da lista: Osório Ribas
+
+
+
+ENCONTROU UMA VAGA NA RUA
+K: Praça 28 -> Rua: João Candido Ferreira - Distancia: 10 -> C: Catedral Lest
+[C][C][+][C][C][C][+][M][C][C][C][M][C][M][M][C][T][C]
+------------------------------------------------------
+[M][M][C][C][C][M][C][C][M][-][M][C][T][M][C][C][M]
+Valor metaheuristico: 88

@@ -55,14 +55,14 @@ public class Edge<T> {
             int chanceVeiculo = rand.nextInt(100);
             int chanceOcupado = rand.nextInt(100);
 
-            if(chanceVeiculo > 70 && chanceVeiculo < 95) {
+            if(chanceVeiculo > 70 && chanceVeiculo <= 90) {
                 tipo = 1; //gera moto
             }
-            else if(chanceVeiculo > 95) {
+            else if(chanceVeiculo > 90) {
                 tipo = 3; //gera caminhao
             }
 
-            if(chanceOcupado > 98) {
+            if(chanceOcupado >= 99) {
                 ocupado = false;
             }
             lista.add(new Parking(tipo, ocupado)); //tipo 1-3 e ocupado?

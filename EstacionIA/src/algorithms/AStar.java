@@ -47,7 +47,7 @@ public class AStar<T> {
                 System.out.println(edge.getNome() + " é adjascente de " + atual.getNome() + " via vértice " + edge.getFim().getIndex());
             }
             
-            System.out.println("\nCriando a Heuristica para os ruas(arestas)");
+            System.out.println("\nCriando a Heuristica para as ruas(arestas)");
             for (Edge<T> filho : filhos) {
                 System.out.println("\nFilho:");
                 System.out.println(filho.toString());

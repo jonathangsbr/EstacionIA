@@ -11,9 +11,9 @@ public class Main {
     public static HashMap<Integer, String> alg = new HashMap<Integer, String>();
     
     public static void main(String[] args) throws Exception {
-        veic.put(1, "moto");
-        veic.put(2, "carro");
-        veic.put(3, "caminhão");
+        veic.put(1, "Moto");
+        veic.put(2, "Carro");
+        veic.put(3, "Caminhão");
         alg.put(1, "A Estrela (A*)");
         alg.put(2, "Pesquisa Tabu (Tabu Search)");
         alg.put(3, "Roda os dois algoritmos");
@@ -44,6 +44,8 @@ public class Main {
                 System.out.println("Lista de vértices:");
                 mapa.printarVertices();
                 System.out.println("=-=-=-=-=-=-=-=-=-=-=");
+                System.exit(0);
+
             }
             else if(args[i].equals("-V")) {
                 try {
